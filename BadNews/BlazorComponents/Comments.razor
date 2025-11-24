@@ -45,7 +45,8 @@
         {
             var comment = new Comment(user, message);
             comments.Add(comment);
-            StateHasChanged();
+            //StateHasChanged();
+            InvokeAsync(StateHasChanged);
         });
 
         await hubConnection.StartAsync().ConfigureAwait(false);

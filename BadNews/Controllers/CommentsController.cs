@@ -35,7 +35,7 @@ namespace BadNews.Controllers
                 Comments = comments
             };
 
-            return Ok(result);
+            return result;
         }
     }
 }
